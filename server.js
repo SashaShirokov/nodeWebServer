@@ -37,31 +37,25 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
     res.render('home.hbs', {
         header: 'Best games ever...',
-        slogan: 'Never stop moving forward...',
-        pageTitle: 'Home',
         welcomeMessage: 'Welcome to the world of games!'
     })
 })
 
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
-        header: 'Portfolio',
-        pageTitle: 'Projects'
+        header: 'Portfolio'
     })
 })
 
 app.get('/contacts', (req, res) => {
     res.render('contacts.hbs', {
-        header: 'Best games ever...',
-        slogan: 'Never stop moving forward...',
-        pageTitle: 'Contacts'
+        header: 'Our contacts...'
     })
 })
 
 app.get('/bad', (req, res) => {
     res.send({
-        reason: 'Well done',
-        tactic: 'Keep up the great job.'
+        reason: 'Well done'
     })
 })
 
