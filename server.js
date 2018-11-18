@@ -38,8 +38,15 @@ app.get('/', (req, res) => {
     res.render('home.hbs', {
         header: 'Best games ever...',
         slogan: 'Never stop moving forward...',
-        pageTitle: 'Phaser games',
+        pageTitle: 'Home',
         welcomeMessage: 'Welcome to the world of games!'
+    })
+})
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        header: 'Portfolio',
+        pageTitle: 'Projects'
     })
 })
 
@@ -47,7 +54,7 @@ app.get('/contacts', (req, res) => {
     res.render('contacts.hbs', {
         header: 'Best games ever...',
         slogan: 'Never stop moving forward...',
-        pageTitle: 'Our contacts'
+        pageTitle: 'Contacts'
     })
 })
 
